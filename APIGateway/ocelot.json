@@ -1,0 +1,79 @@
+{
+  "ReRoutes": [
+    {
+      "DownStreamPathTemplate": "/api/user",
+      "DownStreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "39226"
+        }
+      ],
+      "UpStreamPathTemplate": "/user",
+      "UpStreamHttpMethod": [ "GET", "POST" ]
+    },
+    {
+      "DownStreamPathTemplate": "/api/user/{id}",
+      "DownStreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "39226"
+        }
+      ],
+      "UpStreamPathTemplate": "/user/{id}",
+      "UpStreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "DownStreamPathTemplate": "/api/product",
+      "DownStreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50869"
+        }
+      ],
+      "UpStreamPathTemplate": "/product",
+      "UpStreamHttpMethod": [ "GET", "POST" ]
+    },
+
+    {
+      "DownStreamPathTemplate": "/api/product/{id}",
+      "DownStreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50869"
+        }
+      ],
+      "UpStreamPathTemplate": "/product/{id}",
+      "UpStreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownStreamPathTemplate": "/api/order",
+      "DownStreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50452"
+        }
+      ],
+      "UpStreamPathTemplate": "/order",
+      "UpStreamHttpMethod": [ "GET", "POST" ]
+    },
+
+    {
+      "DownStreamPathTemplate": "/api/order/{id}",
+      "DownStreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "50452"
+        }
+      ],
+      "UpStreamPathTemplate": "/order/{id}",
+      "UpStreamHttpMethod": [ "GET" ]
+    }
+  ]
+}
